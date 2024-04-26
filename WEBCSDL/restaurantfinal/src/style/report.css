@@ -1,0 +1,125 @@
+/* BillList.module.css */
+
+.container-report {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    color: #333;
+    padding: 0;
+  }
+  
+  li {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .bill-item-report {
+    min-width: 200px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s;
+    width: 30%;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .bill-item-report:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bill-item-report p {
+    margin-bottom: 20px;
+  }
+  
+  .bill-item-report p:first-child {
+    font-weight: bold;
+  }
+  
+  .bill-item-report .customer-info {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .bill-item-report .customer-info p {
+    margin-bottom: 5px;
+  }
+
+  .container-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    height: 40%;
+    position: fixed;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .close-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    transition: .3s ease-in;
+    cursor: pointer;
+  }
+  .name-container{
+    position: absolute;
+    font-size: 24px;
+    transition: .3s ease-in;
+    left: 10%;
+    top: 40%;
+  }
+  .close-container:hover{
+    color: #e04949;
+  }
+  
+  .option {
+    padding: 10px 20px;
+    background-color: #52d6c9;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    
+  }
+  
+  .option:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+  }
+  
+  .selected {
+    background-color: #b3d9ff;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,201 @@
+
+
+.table-container {
+    /* Căn giữa nội dung trong container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+
+  .user-table-header{
+    width: 100%;
+    height: 100px;
+    background-color: #1dbfaf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+.user-table-active{
+  border: 2px solid #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+  .user-table-header-title,.user-table-header-user{
+    font-size: 36px;
+    padding: 29px;
+    color: #fff;
+    margin-left: 100px;
+  }
+
+  
+  .user-table-grid {
+    /* Sử dụng flexbox để căn chỉnh các bàn */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .user-table-item{
+    width: 30%;
+    margin: 24px;
+    min-width: 400px !important;
+    /* height: 40%; */
+    max-height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 500px;
+    height: 300px;
+  }
+
+  .user-table-item > h3 {
+    padding: 20px;
+  }
+  .user-table-item > p {
+    padding: 20px;
+  }
+  
+  .table {
+    /* Định dạng cho mỗi bàn */
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .yellow {
+    background-color: rgb(224, 224, 121);
+  }
+  
+  .lightblue {
+    background-color: rgb(113, 228, 161);
+  }
+
+  .logo-pos-user > img{
+    height: 100px;
+  }
+
+  .user-table-header-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  .user-table-header-user  > p {
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .logout-menu {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: visibility 0s, opacity 0.3s, transform 0.3s;
+  }
+  
+  .user-table-header-user:hover .logout-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .modal-content>h2{
+    width: 100%;
+  }
+  .modal-content>button{
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+  }
+  .cancel-confirm{
+    background-color: #ca3c32;
+  }
+.nguyen-lieu-table{
+  width: 1200px !important;
+  height: 100px !important;
+}
+  .nguyen-lieu-item{
+    text-align: center;
+    max-height: 100px !important;
+
+  }
+  .nguyen-lieu{
+    width: 95%;
+  }
+  .them-nguyen-lieu{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    flex-direction: column;
+  }
+  .them-nguyen-lieu input{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100px;
+    margin: 10px;
+  }
+  .chon-donvi{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  .user-table-item-nl{
+    width: 30%;
+    margin: 24px;
+    min-width: 400px !important;
+    /* height: 40%; */
+    max-height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 500px;
+    height: 100px;
+  }

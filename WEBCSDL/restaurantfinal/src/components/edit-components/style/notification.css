@@ -1,0 +1,60 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .notification.show {
+    opacity: 1;
+  }
+  
+  .notification.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .notification-message {
+    margin-right: 10px;
+  }
+  
+  .notification-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .notification-close:hover {
+    color: #333;
+  }
+  .notification {
+    /* Các thuộc tính khác */
+  
+    /* Thuộc tính ban đầu */
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .notification.show {
+    /* Thuộc tính khi phần tử hiển thị */
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .notification.hide {
+    /* Thuộc tính khi phần tử bị ẩn đi */
+    opacity: 0;
+    transform: translateY(-100%);
+  }
